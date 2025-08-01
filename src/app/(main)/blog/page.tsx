@@ -162,7 +162,7 @@ export default function BlogPage() {
 
   // 필터링된 포스트 목록
   const filteredPosts = useMemo(() => {
-    let filtered = posts.filter(post => {
+    const filtered = posts.filter(post => {
       const matchesCategory = selectedCategory === "전체" || post.category === selectedCategory;
       const matchesTag = selectedTag === "전체" || post.tags.includes(selectedTag);
       const matchesSearch = searchTerm === "" || 

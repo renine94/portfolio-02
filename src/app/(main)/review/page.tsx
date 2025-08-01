@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Image from "next/image";
 
 // 대출후기 타입 정의
 interface Review {
@@ -91,7 +90,7 @@ export default function ReviewPage() {
 
   // 필터링된 후기 목록
   const filteredReviews = useMemo(() => {
-    let filtered = reviews.filter(review => {
+    const filtered = reviews.filter(review => {
       const matchesLoanType = selectedLoanType === "전체" || review.loanType === selectedLoanType;
       const matchesBank = selectedBank === "전체" || review.bank === selectedBank;
       const matchesRating = selectedRating === "전체" || 

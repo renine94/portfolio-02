@@ -24,7 +24,6 @@ interface Notice {
 // 목 데이터 생성 함수
 const generateMockNotices = (): Notice[] => {
   const categories = ["시스템", "대출상품", "이벤트", "정책변경", "서비스", "점검"];
-  const priorities: Array<"일반" | "중요" | "긴급"> = ["일반", "중요", "긴급"];
   const authors = ["관리자", "대출팀", "시스템관리자", "고객센터", "상품팀"];
 
   const noticeTitles = [
@@ -98,7 +97,7 @@ export default function NoticePage() {
 
   // 필터링된 공지사항 목록
   const filteredNotices = useMemo(() => {
-    let filtered = notices.filter(notice => {
+    const filtered = notices.filter(notice => {
       const matchesCategory = selectedCategory === "전체" || notice.category === selectedCategory;
       const matchesPriority = selectedPriority === "전체" || notice.priority === selectedPriority;
       const matchesSearch = searchTerm === "" || 

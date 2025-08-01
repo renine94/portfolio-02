@@ -228,7 +228,7 @@ export default function QuestionPage() {
           <div className="flex justify-center pt-4">
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded-lg transition-colors text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded-lg transition-all text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               문의 접수하기
             </button>

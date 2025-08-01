@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Image from "next/image";
 
 // 문의글 타입 정의
 interface Inquiry {
