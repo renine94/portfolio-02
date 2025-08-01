@@ -43,7 +43,7 @@
   --destructive: #7f1d1d;
   --destructive-foreground: #fafafa;
   --border: #27272a;
-  --input: #27272a;
+  --input: #ffffff;
   --ring: #d4d4d8;
 }
 
@@ -120,4 +120,23 @@ body {
   :root:not(.dark) {
     color-scheme: light;
   }
+}
+
+/* 다크모드에서 인풋박스와 폼 요소 스타일링 */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #ffffff !important;
+  color: #171717 !important;
+  border-color: #e4e4e7 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #71717a !important;
+}
+
+/* 다크모드에서 폼 라벨 텍스트 색상 */
+.dark label {
+  color: #fafafa !important;
 }

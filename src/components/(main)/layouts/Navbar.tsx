@@ -25,7 +25,7 @@ export default function Navbar() {
           <Link href="/question" className="hover:text-blue-600 transition-colors">
             대출 문의
           </Link>
-          <Link href="/question/my-question" className="hover:text-blue-600 transition-colors">
+          <Link href="/my-inquiries" className="hover:text-blue-600 transition-colors">
             내 문의 글 찾기
           </Link>
           <Link href="/review" className="hover:text-blue-600 transition-colors">
@@ -70,7 +70,7 @@ export default function Navbar() {
             대출 문의
           </Link>
           <Link 
-            href="/question/my-question" 
+            href="/my-inquiries" 
             className="text-lg font-bold py-2 hover:text-blue-600 transition-colors border-b border-gray-100"
             onClick={() => setIsMenuOpen(false)}
           >
